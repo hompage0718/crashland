@@ -22,6 +22,7 @@ import {
   Toolbar,
   Container,
   Paper,
+  Box,
 } from "@material-ui/core";
 
 import useStyles from "../../styles";
@@ -36,22 +37,32 @@ const Testimonials = (props) => {
       description: "Very good working experience!",
     },
     {
-      name: "Justin Bieber",
+      name: "Maiko Kanami",
       image: "https://source.unsplash.com/random",
       description: "Friendly and supportive staff.",
     },
     {
-      name: "Bill Gates",
+      name: "Hikari Ohana",
       image: "https://source.unsplash.com/random",
       description: "Good clients, good working environment.",
+    },
+    {
+      name: "Asahi Ko",
+      image: "https://source.unsplash.com/random",
+      description: "Love the work that I do!",
+    },
+    {
+      name: "Takanami Maru",
+      image: "https://source.unsplash.com/random",
+      description: "Nice people. Fun to be with!",
     },
   ];
 
   function Item(props) {
     return (
-      <Paper elevation={2}>
+      <Paper elevation={2} style={{ maxHeight: 250, overflow: "auto" }}>
         {itemData.map((item) => (
-          <List key={item.name} className={classes.testiroot}>
+          <List key={item.name} className={classes.testiroot} borderBottom={1}>
             <ListItem alignItems="flex-start">
               <ListItemAvatar>
                 <Avatar
@@ -65,16 +76,16 @@ const Testimonials = (props) => {
                 primary={item.name}
                 secondary={
                   <Fragment>
-                    <Link
+                    <Typography
                       className={classes.testiinline}
-                      component="button"
+                      // component="button"
                       variant="string"
                       onClick={() => {
                         console.info("I'm a button.");
                       }}
                     >
                       {item.description}
-                    </Link>
+                    </Typography>
                   </Fragment>
                 }
               />

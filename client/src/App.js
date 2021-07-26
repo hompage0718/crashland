@@ -5,6 +5,8 @@ import Navbar from "./components/views/Navbar";
 import Footer from "./components/views/Footer";
 import Home from "./components/views/Home";
 import AboutUs from "./components/about/AboutUs";
+import Clients from "./components/clients/Clients";
+import Topics from "./components/topics/Topics";
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/aboutus" component={AboutUs} />
+          <Route exact path="/clients" component={Clients} />
+          <Route exact path="/topics" component={Topics} />
         </Switch>
         <Footer />
       </Fragment>

@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 import {
   Typography,
@@ -45,7 +46,7 @@ const Service = (props) => {
             <Card className={classes.card}>
               <CardContent className={classes.cardContent}>
                 <Typography gutterBottom variant="h5">
-                  Our Services
+                  Our Clients
                 </Typography>
                 <Typography>
                   いやしくも何かをするなら、じょうずにやりなさい。
@@ -62,7 +63,7 @@ const Service = (props) => {
               /> */}
               <CardActions>
                 <Button size="medium" color="primary">
-                  More
+                  <Link to="/clients">More </Link>
                 </Button>
               </CardActions>
             </Card>

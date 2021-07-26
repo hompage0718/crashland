@@ -23,7 +23,7 @@ import {
 
 import Carousel from "react-material-ui-carousel";
 import About from "./About";
-import Service from "./Service";
+import Clients from "./Clients";
 import Testimonials from "./Testimonials";
 import Topics from "./Topics";
 import Gallery from "./Gallery";
@@ -99,7 +99,7 @@ const Body = (props) => {
         </Carousel>
       </Container>
       <About />
-      <Service />
+      <Clients />
       <Topics />
       <Testimonials />
       <Gallery />

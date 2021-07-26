@@ -74,8 +74,8 @@ const Footer = (props) => {
               >
                 <Grid item>
                   <ButtonGroup
-                    size="large"
-                    aria-label="large outlined primary button group"
+                    size="small"
+                    aria-label="outlined primary button group"
                     variant="text"
                   >
                     <Button>Privacy Policy</Button>

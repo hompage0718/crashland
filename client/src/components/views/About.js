@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 import {
   Typography,
@@ -52,7 +53,7 @@ const About = (props) => {
               /> */}
               <CardActions>
                 <Button size="medium" color="primary">
-                  More
+                  <Link to="/aboutus">More </Link>
                 </Button>
               </CardActions>
             </Card>

@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
   containerheader: {
     // backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(4, 0, 3),
+    padding: theme.spacing(4, 2, 3),
     flexGrow: 1,
   },
   carousel: {
@@ -72,6 +72,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     maxWidth: "50ch",
     backgroundColor: theme.palette.background.paper,
+    border: "1px",
   },
   testiinline: {
     display: "inline",

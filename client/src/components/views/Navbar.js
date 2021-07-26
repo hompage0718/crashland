@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { Link, useHistory } from "react-router-dom";
 import PropTypes from "prop-types";
+
 import {
   Typography,
   AppBar,
@@ -24,12 +26,14 @@ import MenuTwoToneIcon from "@material-ui/icons/MenuTwoTone";
 
 import useStyles from "../../styles";
 
-const Navbar = (props) => {
+const Navbar = () => {
+  const history = useHistory();
   const classes = useStyles();
   const [value, setValue] = useState(null);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    history.push(newValue);
   };
 
   const options = ["About Us", "Clients", "Jobs", "Contact Us"];
@@ -55,7 +59,9 @@ const Navbar = (props) => {
           <Hidden xsDown>
             <Grid item xs={6} sm={2}>
               <Toolbar>
-                <Typography variant="h6">CompanyName</Typography>
+                <Typography variant="h6">
+                  <a href="/">CompanyName</a>
+                </Typography>
               </Toolbar>
             </Grid>
             <Grid item xs={6} sm={10}>
@@ -67,8 +73,8 @@ const Navbar = (props) => {
                   textColor="inherit"
                   variant="scrollable"
                 >
-                  <Tab label="About Us" />
-                  <Tab label="Clients" />
+                  <Tab label="About Us" value="/aboutus" />
+                  <Tab label="Clients" value="/clients" />
                   <Tab label="Jobs" />
                   <Tab label="Contact Us" />
                 </Tabs>
