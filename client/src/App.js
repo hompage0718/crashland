@@ -1,13 +1,18 @@
-import "./App.css";
+import React, { Fragment } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Hello from "./components/views/Hello";
+import Home from "./components/views/Home";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Hello />
-    </div>
+    <Router>
+      <Fragment>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </Fragment>
+    </Router>
   );
-}
+};
 
 export default App;

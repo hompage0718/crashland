@@ -13,9 +13,11 @@
   "author": "JK",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "mongoose": "^5.13.3"
+    "mongoose": "^5.13.3",
+    "nanoid": "^3.1.23"
   },
   "devDependencies": {
     "concurrently": "^6.2.0",
