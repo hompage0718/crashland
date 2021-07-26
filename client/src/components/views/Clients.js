@@ -23,6 +23,10 @@ import {
   Container,
 } from "@material-ui/core";
 
+import { red, blue } from "@material-ui/core/colors";
+
+import AirportShuttleIcon from "@material-ui/icons/AirportShuttle";
+
 import useStyles from "../../styles";
 
 const Service = (props) => {
@@ -45,6 +49,12 @@ const Service = (props) => {
           <Grid item xs={12} sm={6} md={6}>
             <Card className={classes.card}>
               <CardContent className={classes.cardContent}>
+                <AirportShuttleIcon
+                  // fontSize="large"
+                  style={{ color: blue[800] }}
+                  className={classes.largeIcon}
+                />
+
                 <Typography gutterBottom variant="h5">
                   Our Clients
                 </Typography>

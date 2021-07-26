@@ -107,25 +107,27 @@ const Testimonials = (props) => {
         >
           Testimonials
         </Typography>
-        <Grid container spacing={4}>
-          <Grid item xs={12} sm={6} md={6}>
-            <Card className={classes.card}>
-              <CardMedia
-                className={classes.cardMedia}
-                image="https://source.unsplash.com/random"
-                title="Image Title"
-              />
-            </Card>
-          </Grid>
+        <div className={classes.topicRoot}>
+          <Grid container spacing={4}>
+            <Grid item xs={12} sm={6} md={6}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image="https://source.unsplash.com/random"
+                  title="Image Title"
+                />
+              </Card>
+            </Grid>
 
-          <Grid item xs={12} sm={6} md={6}>
-            <Card className={classes.card}>
-              <CardContent className={classes.cardContent}>
-                <Item />
-              </CardContent>
-            </Card>
+            <Grid item xs={12} sm={6} md={6}>
+              <Card className={classes.card}>
+                <CardContent className={classes.cardContent}>
+                  <Item />
+                </CardContent>
+              </Card>
+            </Grid>
           </Grid>
-        </Grid>
+        </div>
       </Container>
     </>
   );

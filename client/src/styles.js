@@ -25,12 +25,12 @@ const useStyles = makeStyles((theme) => ({
   },
   containerabout: {
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(10, 0, 3),
+    padding: theme.spacing(4, 0, 3),
     flexGrow: 1,
   },
   containerheader: {
     // backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(10, 2, 3),
+    padding: theme.spacing(4, 2, 3),
     flexGrow: 1,
   },
   carousel: {
@@ -84,10 +84,12 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-around",
     overflow: "hidden",
     backgroundColor: theme.palette.background.paper,
+    paddingTop: "20px",
   },
   topicImageList: {
-    width: "500",
-    height: "450",
+    width: "240",
+    height: "225",
+    borderRadius: "5%",
   },
   topicIcon: {
     color: "rgba(255, 255, 255, 0.54)",
@@ -111,6 +113,18 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 35,
     backgroundColor: "#d50000",
     padding: "10px 20px",
+  },
+  largeIcon: {
+    width: 60,
+    height: 60,
+  },
+  largerIcon: {
+    width: 80,
+    height: 80,
+  },
+  addonIcon: {
+    flexGrow: 1,
+    textAlign: "center",
   },
   footerinfo: {
     padding: theme.spacing(2),

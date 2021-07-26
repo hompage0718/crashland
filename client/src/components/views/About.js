@@ -23,6 +23,10 @@ import {
   Container,
 } from "@material-ui/core";
 
+import { red, blue } from "@material-ui/core/colors";
+
+import SpaSharpIcon from "@material-ui/icons/SpaSharp";
+
 import useStyles from "../../styles";
 
 const About = (props) => {
@@ -35,6 +39,11 @@ const About = (props) => {
           <Grid item xs={12} sm={6} md={6}>
             <Card className={classes.card}>
               <CardContent className={classes.cardContent}>
+                <SpaSharpIcon
+                  // fontSize="large"
+                  style={{ color: blue[800] }}
+                  className={classes.largeIcon}
+                />
                 <Typography gutterBottom variant="h5">
                   About Us
                 </Typography>

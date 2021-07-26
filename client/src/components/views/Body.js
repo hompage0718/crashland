@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { useState, Fragment } from "react";
 import PropTypes from "prop-types";
 import {
   Typography,
@@ -24,9 +24,7 @@ import {
 import Carousel from "react-material-ui-carousel";
 import About from "./About";
 import Clients from "./Clients";
-import Testimonials from "./Testimonials";
-import Topics from "./Topics";
-import Gallery from "./Gallery";
+import Addons from "./Addons";
 
 import useStyles from "../../styles";
 
@@ -45,10 +43,6 @@ const Body = (props) => {
     {
       image: "https://source.unsplash.com/random",
       description: "Probably the most random thing you have ever seen!",
-    },
-    {
-      image: "https://source.unsplash.com/random",
-      description: "Hello World!",
     },
   ];
 
@@ -100,9 +94,7 @@ const Body = (props) => {
       </Container>
       <About />
       <Clients />
-      <Topics />
-      <Testimonials />
-      {/* <Gallery /> */}
+      <Addons />
     </>
   );
 };

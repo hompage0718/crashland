@@ -73,7 +73,11 @@ const Topics = (props) => {
         </Typography>
         <Paper>
           <div className={classes.topicRoot}>
-            <ImageList rowHeight={300} className={classes.topicImageList}>
+            <ImageList
+              rowHeight={250}
+              className={classes.topicImageList}
+              cols={2}
+            >
               {itemData.map((item) => (
                 <ImageListItem key={item.img}>
                   <img src={item.img} alt={item.title} />
@@ -85,10 +89,12 @@ const Topics = (props) => {
                         aria-label={`info about ${item.title}`}
                         className={classes.topicIcon}
                       >
-                        <KeyboardArrowRightIcon
-                          fontSize="large"
-                          style={{ color: blue[400] }}
-                        />
+                        <Link to="/topics">
+                          <KeyboardArrowRightIcon
+                            fontSize="large"
+                            style={{ color: blue[400] }}
+                          />{" "}
+                        </Link>
                       </IconButton>
                     }
                   />

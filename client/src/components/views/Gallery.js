@@ -72,7 +72,7 @@ const Gallery = (props) => {
         >
           Gallery
         </Typography>
-        <div className={classes.root}>
+        <div className={classes.topicRoot}>
           <ImageList className={classes.imageList} cols={2.5}>
             {itemData.map((item) => (
               <ImageListItem key={item.img}>
@@ -83,14 +83,14 @@ const Gallery = (props) => {
                     root: classes.titleBar,
                     title: classes.title,
                   }}
-                  actionIcon={
-                    <IconButton aria-label={`star ${item.title}`}>
-                      {/* <StarBorderIcon className={classes.title} /> */}
-                      <Button size="medium" color="primary">
-                        More
-                      </Button>
-                    </IconButton>
-                  }
+                  // actionIcon={
+                  //   <IconButton aria-label={`star ${item.title}`}>
+                  //     <StarBorderIcon className={classes.title} />
+                  //     <Button size="medium" color="primary">
+                  //       More
+                  //     </Button>
+                  //   </IconButton>
+                  // }
                 />
               </ImageListItem>
             ))}
