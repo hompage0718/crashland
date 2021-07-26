@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   root: {
-    flexGrow: 1,
+    // flexGrow: 1,
     padding: theme.spacing(3, 0, 2),
     display: "flex",
     flexWrap: "wrap",
@@ -20,26 +20,34 @@ const useStyles = makeStyles((theme) => ({
   },
   container: {
     // backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(4, 0, 3),
+    padding: theme.spacing(10, 0, 3),
     flexGrow: 1,
   },
   containerabout: {
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(4, 0, 3),
+    padding: theme.spacing(10, 0, 3),
     flexGrow: 1,
   },
   containerheader: {
     // backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(4, 2, 3),
+    padding: theme.spacing(10, 2, 3),
     flexGrow: 1,
   },
   carousel: {
     width: "auto",
-    height: "350px",
+    height: "450px",
+    borderRadius: "5%",
   },
   cardMedia: {
     flexGrow: 1,
-    paddingTop: "42.85%", //21:9
+    // paddingTop: "42.85%", //21:9
+    paddingTop: "56.25%", // 16:9,
+    borderRadius: "5%",
+  },
+  cardMediaTopic: {
+    flexGrow: 1,
+    paddingTop: "56.25%", // 16:9,
+    borderRadius: "50%",
   },
   cardGrid: {
     padding: "20px 5px",
@@ -53,7 +61,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   cardMediaCircle: {
-    paddingTop: "42.85%", //21:9
+    // paddingTop: "42.85%", //21:9
+    paddingTop: "56.25%", // 16:9,
     borderRadius: "75%",
   },
   imageList: {
@@ -67,6 +76,21 @@ const useStyles = makeStyles((theme) => ({
   titleBar: {
     background:
       "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)",
+  },
+  topicRoot: {
+    flexGrow: 1,
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+    overflow: "hidden",
+    backgroundColor: theme.palette.background.paper,
+  },
+  topicImageList: {
+    width: "500",
+    height: "450",
+  },
+  topicIcon: {
+    color: "rgba(255, 255, 255, 0.54)",
   },
   testiroot: {
     width: "100%",

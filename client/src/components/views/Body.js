@@ -102,7 +102,7 @@ const Body = (props) => {
       <Clients />
       <Topics />
       <Testimonials />
-      <Gallery />
+      {/* <Gallery /> */}
     </>
   );
 };

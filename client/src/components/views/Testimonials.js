@@ -60,7 +60,7 @@ const Testimonials = (props) => {
 
   function Item(props) {
     return (
-      <Paper elevation={2} style={{ maxHeight: 250, overflow: "auto" }}>
+      <Paper elevation={2} style={{ maxHeight: 350, overflow: "auto" }}>
         {itemData.map((item) => (
           <List key={item.name} className={classes.testiroot} borderBottom={1}>
             <ListItem alignItems="flex-start">

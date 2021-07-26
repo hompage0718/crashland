@@ -1,5 +1,6 @@
 import React, { useState, Fragment } from "react";
 import PropTypes from "prop-types";
+
 import useStyles from "../../styles";
 
 import {
@@ -30,7 +31,7 @@ import { red, blue } from "@material-ui/core/colors";
 const Topics = (props) => {
   const classes = useStyles();
 
-  const cards = ["AirportShuttleIcon", "AirplanemodeActiveIcon", "AppleIcon"];
+  const cards = [1, 2, 3, 4, 5, 6, 7, 8];
 
   return (
     <>
@@ -63,9 +64,34 @@ const Topics = (props) => {
         </Container>
         <Container maxWidth="md" className={classes.container}>
           <Grid container spacing={4}>
+            <Grid item xs={12}>
+              <Card className={classes.card}>
+                <CardContent className={classes.cardContent}>
+                  <Typography variant="h6">Heading</Typography>
+                  <Typography variant="body2">
+                    This is a media card. You can use this section to describe
+                    the content.
+                  </Typography>
+                </CardContent>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image="https://source.unsplash.com/random"
+                  title="Image Title"
+                />
+              </Card>
+            </Grid>
+          </Grid>
+        </Container>
+        <Container maxWidth="md" className={classes.container}>
+          <Grid container spacing={4}>
             {cards.map((card) => (
-              <Grid item key={card} xs={12}>
+              <Grid item key={card} xs={12} sm={4} md={3}>
                 <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://source.unsplash.com/random"
+                    title="Image Title"
+                  />
                   <CardContent className={classes.cardContent}>
                     <Typography variant="h6">Heading</Typography>
                     <Typography variant="body2">
@@ -73,11 +99,6 @@ const Topics = (props) => {
                       the content.
                     </Typography>
                   </CardContent>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
-                    title="Image Title"
-                  />
                 </Card>
               </Grid>
             ))}
