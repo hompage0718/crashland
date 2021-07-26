@@ -100,8 +100,8 @@ const Body = (props) => {
       </Container>
       <About />
       <Service />
-      <Testimonials />
       <Topics />
+      <Testimonials />
       <Gallery />
     </>
   );

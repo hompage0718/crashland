@@ -1,10 +1,14 @@
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-  //   root: {
-  //     flexGrow: 1,
-  //     padding: theme.spacing(3, 0, 2),
-  //   },
+  btnpadone: {
+    [theme.breakpoints.down("sm")]: {
+      padding: "5px 5px",
+    },
+    [theme.breakpoints.up("md")]: {
+      padding: "5px 50px",
+    },
+  },
   root: {
     flexGrow: 1,
     padding: theme.spacing(3, 0, 2),
@@ -21,6 +25,11 @@ const useStyles = makeStyles((theme) => ({
   },
   containerabout: {
     backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(4, 0, 3),
+    flexGrow: 1,
+  },
+  containerheader: {
+    // backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(4, 0, 3),
     flexGrow: 1,
   },
@@ -100,6 +109,16 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: "center",
     // color: theme.palette.text.secondary,
+  },
+  pagetopbutton: {
+    // flexGrow: 1,
+    // padding: theme.spacing(1),
+    textAlign: "center",
+  },
+  contentcenter: {
+    // flexGrow: 1,
+    // padding: theme.spacing(1),
+    textAlign: "center",
   },
 }));
 
