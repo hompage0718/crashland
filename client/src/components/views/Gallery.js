@@ -36,28 +36,27 @@ const Gallery = (props) => {
   const itemData = [
     {
       img: "https://source.unsplash.com/random",
-      title: "Image",
-      author: "author",
     },
     {
       img: "https://source.unsplash.com/random",
-      title: "Image",
-      author: "author",
     },
     {
       img: "https://source.unsplash.com/random",
-      title: "Image",
-      author: "author",
     },
     {
       img: "https://source.unsplash.com/random",
-      title: "Image",
-      author: "author",
     },
     {
       img: "https://source.unsplash.com/random",
-      title: "Image",
-      author: "author",
+    },
+    {
+      img: "https://source.unsplash.com/random",
+    },
+    {
+      img: "https://source.unsplash.com/random",
+    },
+    {
+      img: "https://source.unsplash.com/random",
     },
   ];
 
@@ -72,26 +71,15 @@ const Gallery = (props) => {
         >
           Gallery
         </Typography>
-        <div className={classes.topicRoot}>
-          <ImageList className={classes.imageList} cols={2.5}>
-            {itemData.map((item) => (
-              <ImageListItem key={item.img}>
+        <div className={classes.galleryRoot}>
+          <ImageList
+            rowHeight={160}
+            className={classes.galleryImageList}
+            cols={3}
+          >
+            {itemData.map((item, index) => (
+              <ImageListItem key={index} cols={item.cols || 1}>
                 <img src={item.img} alt={item.title} />
-                <ImageListItemBar
-                  title={item.title}
-                  classes={{
-                    root: classes.titleBar,
-                    title: classes.title,
-                  }}
-                  // actionIcon={
-                  //   <IconButton aria-label={`star ${item.title}`}>
-                  //     <StarBorderIcon className={classes.title} />
-                  //     <Button size="medium" color="primary">
-                  //       More
-                  //     </Button>
-                  //   </IconButton>
-                  // }
-                />
               </ImageListItem>
             ))}
           </ImageList>

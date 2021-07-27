@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   root: {
-    // flexGrow: 1,
+    flexGrow: 1,
     padding: theme.spacing(3, 0, 2),
     display: "flex",
     flexWrap: "wrap",
@@ -18,9 +18,14 @@ const useStyles = makeStyles((theme) => ({
     overflow: "hidden",
     backgroundColor: theme.palette.background.paper,
   },
+  containerCarousel: {
+    // backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(1, 0, 1),
+    flexGrow: 1,
+  },
   container: {
     // backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(10, 0, 3),
+    padding: theme.spacing(4, 0, 3),
     flexGrow: 1,
   },
   containerabout: {
@@ -29,14 +34,26 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   containerheader: {
-    // backgroundColor: theme.palette.background.paper,
+    backgroundColor: "theme.palette.background.paper",
     padding: theme.spacing(4, 2, 3),
+    flexGrow: 1,
+  },
+  containeraddon: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(4, 0, 3),
     flexGrow: 1,
   },
   carousel: {
     width: "auto",
     height: "450px",
-    borderRadius: "5%",
+    // borderRadius: "5%",
+  },
+  carouselText: {
+    position: "absolute",
+    color: "#fff",
+    // textShadow: "0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white",
+    left: "10%",
+    zIndex: 1,
   },
   cardMedia: {
     flexGrow: 1,
@@ -56,6 +73,8 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     display: "flex",
     flexDirection: "column",
+    border: "none",
+    boxShadow: "none",
   },
   cardContent: {
     flexGrow: 1,
@@ -64,6 +83,10 @@ const useStyles = makeStyles((theme) => ({
     // paddingTop: "42.85%", //21:9
     paddingTop: "56.25%", // 16:9,
     borderRadius: "75%",
+  },
+  aboutText: {
+    textAlign: "center",
+    padding: "10px 10px",
   },
   imageList: {
     flexWrap: "nowrap",
@@ -76,6 +99,15 @@ const useStyles = makeStyles((theme) => ({
   titleBar: {
     background:
       "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)",
+  },
+  clientGrid: {
+    flexGrow: 1,
+    textAlign: "center",
+    padding: "20px 10px",
+  },
+  clientIcon: {
+    width: 60,
+    height: 60,
   },
   topicRoot: {
     flexGrow: 1,
@@ -95,6 +127,7 @@ const useStyles = makeStyles((theme) => ({
     color: "rgba(255, 255, 255, 0.54)",
   },
   testiroot: {
+    paddingTop: "20px",
     width: "100%",
     maxWidth: "50ch",
     backgroundColor: theme.palette.background.paper,
@@ -108,6 +141,18 @@ const useStyles = makeStyles((theme) => ({
   avatarlarge: {
     width: theme.spacing(7),
     height: theme.spacing(7),
+  },
+  galleryRoot: {
+    paddingTop: "20px",
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+    overflow: "hidden",
+    backgroundColor: theme.palette.background.paper,
+  },
+  galleryImageList: {
+    width: "auto",
+    height: 450,
   },
   contactbutton: {
     borderRadius: 35,

@@ -74,7 +74,7 @@ const Navbar = () => {
                   variant="scrollable"
                 >
                   <Tab label="About Us" value="/aboutus" />
-                  <Tab label="Clients" value="/clients" />
+                  <Tab label="Services" value="/clients" />
                   <Tab label="Jobs" />
                   <Tab label="Contact Us" />
                 </Tabs>

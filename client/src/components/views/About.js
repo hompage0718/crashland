@@ -35,19 +35,64 @@ const About = (props) => {
   return (
     <>
       <Container maxWidth="lg" className={classes.containerabout}>
-        <Grid container spacing={4}>
-          <Grid item xs={12} sm={6} md={6}>
+        <Grid container spacing={2}>
+          <Hidden smDown>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <Grid container spacing={2}>
+                  <Grid item xs={6}>
+                    <CardMedia
+                      style={{ borderRadius: "50%" }}
+                      className={classes.cardMedia}
+                      image="https://source.unsplash.com/random"
+                      title="About"
+                    />
+                  </Grid>
+                  <Grid item xs></Grid>
+                  <Grid item xs></Grid>
+                </Grid>
+                <Grid container spacing={2}>
+                  <Grid item xs></Grid>
+                  <Grid item xs={6}>
+                    <CardMedia
+                      style={{ borderRadius: "50%" }}
+                      className={classes.cardMedia}
+                      image="https://source.unsplash.com/random"
+                      title="About"
+                    />
+                  </Grid>
+                  <Grid item xs></Grid>
+                </Grid>
+                <Grid container spacing={2}>
+                  <Grid item xs></Grid>
+                  <Grid item xs={6}>
+                    <Grid item xs></Grid>
+                    <CardMedia
+                      style={{ borderRadius: "50%" }}
+                      className={classes.cardMedia}
+                      image="https://source.unsplash.com/random"
+                      title="About"
+                    />
+                  </Grid>
+                </Grid>
+              </Card>
+            </Grid>
+          </Hidden>
+          <Grid item xs={12} sm={6} md={4}>
             <Card className={classes.card}>
-              <CardContent className={classes.cardContent}>
+              <CardContent className={classes.aboutText}>
                 <SpaSharpIcon
-                  // fontSize="large"
-                  style={{ color: blue[800] }}
+                  style={{ textAlign: "center", color: blue[800] }}
                   className={classes.largeIcon}
                 />
-                <Typography gutterBottom variant="h5">
+                <Typography
+                  style={{ textAlign: "center" }}
+                  variant="h4"
+                  gutterBottom
+                >
                   About Us
                 </Typography>
-                <Typography>
+                <Typography variant="subtitle" gutterBottom>
                   いやあ、見事に晴れ渡った秋の日になったね。これが台風一過というやつかね。
                   あんたらの名前なんか興味ないね。どうせこの仕事が終わるとお別れだ。
                   あら、申し訳ございません。
@@ -68,7 +113,7 @@ const About = (props) => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} sm={6} md={6}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card className={classes.card}>
               <CardMedia
                 className={classes.cardMedia}

@@ -21,11 +21,16 @@ import {
   Grid,
   Toolbar,
   Container,
+  Box,
 } from "@material-ui/core";
 
-import { red, blue } from "@material-ui/core/colors";
+import { lime, green, blue, teal } from "@material-ui/core/colors";
 
-import AirportShuttleIcon from "@material-ui/icons/AirportShuttle";
+import BlurOnIcon from "@material-ui/icons/BlurOn";
+import FastfoodIcon from "@material-ui/icons/Fastfood";
+import HotelIcon from "@material-ui/icons/Hotel";
+import DirectionsCarIcon from "@material-ui/icons/DirectionsCar";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 import useStyles from "../../styles";
 
@@ -35,47 +40,83 @@ const Service = (props) => {
   return (
     <>
       <Container maxWidth="lg" className={classes.containerabout}>
-        <Grid container spacing={4}>
-          <Grid item xs={12} sm={6} md={6}>
-            <Card className={classes.card}>
-              <CardMedia
-                className={classes.cardMedia}
-                image="https://source.unsplash.com/random"
-                title="Image Title"
+        <Typography
+          variant="h4"
+          align="center"
+          color="textPrimary"
+          gutterBottom
+        >
+          Our Services
+        </Typography>
+        <Grid container spacing={4} className={classes.clientGrid}>
+          <Grid item xs={12} sm={6} md={3}>
+            <Card>
+              <FastfoodIcon
+                style={{ color: lime[400] }}
+                className={classes.clientIcon}
               />
+              <CardContent>
+                <Link to="/clients">
+                  <Typography variant="h6">Fast Food</Typography>{" "}
+                </Link>
+                <Typography variant="body2">
+                  This is a media card. You can use this section to describe the
+                  content.
+                </Typography>
+              </CardContent>
             </Card>
           </Grid>
 
-          <Grid item xs={12} sm={6} md={6}>
-            <Card className={classes.card}>
-              <CardContent className={classes.cardContent}>
-                <AirportShuttleIcon
-                  // fontSize="large"
-                  style={{ color: blue[800] }}
-                  className={classes.largeIcon}
-                />
-
-                <Typography gutterBottom variant="h5">
-                  Our Clients
-                </Typography>
-                <Typography>
-                  いやしくも何かをするなら、じょうずにやりなさい。
-                  イルカは人間に次いで最も知能が高く、やがては彼らとの対話も夢ではないと考えている科学者もいる。
-                  いやあ、見事に晴れ渡った秋の日になったね。これが台風一過というやつかね。
-                  あんたらの名前なんか興味ないね。どうせこの仕事が終わるとお別れだ。
-                  あら、申し訳ございません。
+          <Grid item xs={12} sm={6} md={3}>
+            <Card>
+              <HotelIcon
+                style={{ color: green[500] }}
+                className={classes.clientIcon}
+              />
+              <CardContent>
+                <Link to="/clients">
+                  <Typography variant="h6">Hotel and Services</Typography>
+                </Link>
+                <Typography variant="body2">
+                  This is a media card. You can use this section to describe the
+                  content.
                 </Typography>
               </CardContent>
-              {/* <CardMedia
-                className={classes.cardMedia}
-                image="https://source.unsplash.com/random"
-                title="Image Title"
-              /> */}
-              <CardActions>
-                <Button size="medium" color="primary">
-                  <Link to="/clients">More </Link>
-                </Button>
-              </CardActions>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <Card>
+              <DirectionsCarIcon
+                style={{ color: blue[400] }}
+                className={classes.clientIcon}
+              />
+              <CardContent>
+                <Link to="/clients">
+                  <Typography variant="h6">Automobile</Typography>
+                </Link>
+                <Typography variant="body2">
+                  This is a media card. You can use this section to describe the
+                  content.
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={3}>
+            <Card>
+              <ShoppingCartIcon
+                style={{ color: teal[400] }}
+                className={classes.clientIcon}
+              />
+              <CardContent>
+                <Link to="/clients">
+                  <Typography variant="h6">Retail</Typography>
+                </Link>
+                <Typography variant="body2">
+                  This is a media card. You can use this section to describe the
+                  content.
+                </Typography>
+              </CardContent>
             </Card>
           </Grid>
         </Grid>

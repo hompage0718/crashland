@@ -29,6 +29,8 @@ import {
 } from "@material-ui/core";
 
 const AboutUs = (props) => {
+  window.scrollTo(0, 0);
+
   const classes = useStyles();
 
   const [who, setWho] = useState(true);

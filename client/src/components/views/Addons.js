@@ -48,15 +48,15 @@ const Addons = (props) => {
     setGallery(false);
     setJob(false);
 
-    if (value === "topic") setTopic(true);
-    if (value === "testi") setTesti(true);
-    if (value === "gallery") setGallery(true);
-    if (value === "job") setJob(true);
+    if (value === "topic") setTopic(!topic);
+    if (value === "testi") setTesti(!testi);
+    if (value === "gallery") setGallery(!gallery);
+    if (value === "job") setJob(!job);
   };
 
   return (
     <>
-      <Container maxWidth="lg" className={classes.container}>
+      <Container maxWidth="lg" className={classes.containeraddon}>
         <Typography
           variant="h4"
           align="center"

@@ -46,17 +46,33 @@ const Body = (props) => {
     },
   ];
 
-  function Item(props) {
+  function Item({ item }) {
     return (
-      <Paper elevation={3}>
-        <CardMedia className={classes.carousel} image={props.item.image} />
+      <Paper elevation={1}>
+        <CardMedia className={classes.carousel} image={item.image} />
       </Paper>
     );
   }
 
   return (
     <>
-      <Container maxWidth="lg" className={classes.container}>
+      <Container maxWidth="lg" className={classes.containerCarousel}>
+        <Typography
+          variant="h2"
+          style={{ top: 150 }}
+          gutterBottom
+          className={classes.carouselText}
+        >
+          ClientName
+        </Typography>
+        <Typography
+          variant="h4"
+          style={{ top: 250 }}
+          gutterBottom
+          className={classes.carouselText}
+        >
+          We pave the way for your success!
+        </Typography>
         <Carousel
           autoPlay={true}
           interval={4000}

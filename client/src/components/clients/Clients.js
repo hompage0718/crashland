@@ -35,6 +35,8 @@ import DirectionsCarIcon from "@material-ui/icons/DirectionsCar";
 import DirectionsBoatIcon from "@material-ui/icons/DirectionsBoat";
 
 const Clients = (props) => {
+  window.scrollTo(0, 0);
+
   const classes = useStyles();
 
   const cards = [
