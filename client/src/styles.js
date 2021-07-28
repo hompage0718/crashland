@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
   containerCarousel: {
     // backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(1, 0, 1),
+    padding: theme.spacing(1, 2, 1),
     flexGrow: 1,
   },
   container: {
@@ -51,13 +51,8 @@ const useStyles = makeStyles((theme) => ({
   carouselText: {
     position: "absolute",
     color: "#fff",
+    left: "10%",
     // textShadow: "0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white",
-    [theme.breakpoints.down("md")]: {
-      left: "10%",
-    },
-    [theme.breakpoints.up("lg")]: {
-      left: "17%",
-    },
     zIndex: 1,
   },
   cardMedia: {

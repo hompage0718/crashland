@@ -56,7 +56,7 @@ const Body = (props) => {
 
   return (
     <>
-      <Container maxWidth="lg" className={classes.containerCarousel}>
+      <Container maxWidth="xl" className={classes.containerCarousel}>
         <Typography
           variant="h2"
           style={{ top: 150 }}
