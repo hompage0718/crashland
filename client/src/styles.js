@@ -52,7 +52,12 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     color: "#fff",
     // textShadow: "0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white",
-    left: "10%",
+    [theme.breakpoints.down("md")]: {
+      left: "10%",
+    },
+    [theme.breakpoints.up("lg")]: {
+      left: "17%",
+    },
     zIndex: 1,
   },
   cardMedia: {
