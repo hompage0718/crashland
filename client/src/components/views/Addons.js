@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { Typography, Button, Grid, Container } from "@material-ui/core";
 
@@ -107,14 +108,16 @@ const Addons = (props) => {
             </Grid>
             <Grid item xs={6} sm={6} md={3} className={classes.addonIcon}>
               <Button
-                onClick={(e) => {
-                  handleClick("job");
-                }}
+              // onClick={(e) => {
+              //   handleClick("job");
+              // }}
               >
-                <WorkOutlineIcon
-                  style={{ color: blue[800] }}
-                  className={classes.largerIcon}
-                />
+                <Link to="/jobs" className={classes.contactButton}>
+                  <WorkOutlineIcon
+                    style={{ color: blue[800] }}
+                    className={classes.largerIcon}
+                  />
+                </Link>
               </Button>
               <Typography
                 variant="h6"

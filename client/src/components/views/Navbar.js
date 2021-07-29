@@ -14,9 +14,13 @@ import {
   Grid,
   Toolbar,
 } from "@material-ui/core";
+
 import MenuTwoToneIcon from "@material-ui/icons/MenuTwoTone";
+import useStyles from "../../styles";
 
 const Navbar = () => {
+  const classes = useStyles();
+
   const history = useHistory();
   const [value, setValue] = useState(null);
 
@@ -49,7 +53,9 @@ const Navbar = () => {
             <Grid item xs={6} sm={2}>
               <Toolbar>
                 <Typography variant="h6">
-                  <a href="/">CompanyName</a>
+                  <a href="/" className={classes.btnCompName}>
+                    CompanyName
+                  </a>
                 </Typography>
               </Toolbar>
             </Grid>
@@ -64,7 +70,7 @@ const Navbar = () => {
                 >
                   <Tab label="About Us" value="/aboutus" />
                   <Tab label="Services" value="/clients" />
-                  <Tab label="Jobs" />
+                  <Tab label="Jobs" value="/jobs" />
                   <Tab label="Contact Us" value="/contactus" />
                 </Tabs>
               </Toolbar>

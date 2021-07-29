@@ -61,6 +61,11 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
 
+  //Navbar
+  btnCompName: {
+    color: "white",
+  },
+
   //Carousel
   containerCarousel: {
     // backgroundColor: theme.palette.background.paper,
@@ -158,12 +163,12 @@ const useStyles = makeStyles((theme) => ({
     padding: "0 5px 20px 5px",
   },
   contactButton: {
-    borderRadius: "10%",
+    borderRadius: "50px",
     color: "white",
-    // margin: "0 5px 0 5px",
+    padding: "5px 20px",
   },
   contactDivider: {
-    background: "#00e5ff",
+    background: theme.palette.primary.light,
     height: "5px",
   },
 
@@ -192,6 +197,28 @@ const useStyles = makeStyles((theme) => ({
   form: {
     width: "100%", // Fix IE 11 issue.
     marginTop: theme.spacing(1),
+  },
+
+  //Jobs
+  jobHeading: {
+    fontSize: theme.typography.pxToRem(17),
+    flexBasis: "33.33%",
+    flexShrink: 0,
+    color: theme.palette.primary.dark,
+  },
+  jobSecondaryHeading: {
+    fontSize: theme.typography.pxToRem(14),
+    color: theme.palette.info.dark,
+  },
+  jobCard: {
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    border: "none",
+    boxShadow: "none",
+  },
+  jobCardContent: {
+    flexGrow: 1,
   },
 
   //Topics

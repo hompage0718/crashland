@@ -30,7 +30,12 @@ const Contact = (props) => {
         <div className={classes.containerheader}>
           <Grid container spacing={0}>
             <Grid item xs={12} className={classes.contactGrid}>
-              <Button variant="contained" color="primary" size="large">
+              <Button
+                variant="contained"
+                color="primary"
+                size="large"
+                className={classes.contactButton}
+              >
                 <Link to="/contactus" className={classes.contactButton}>
                   Contact Us
                 </Link>
