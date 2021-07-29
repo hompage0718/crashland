@@ -1,32 +1,16 @@
-import React, { useState, Fragment } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 
 import useStyles from "../../styles";
 
 import {
   Typography,
-  Icon,
-  AppBar,
   Paper,
-  Tabs,
-  Tab,
-  Button,
-  ButtonGroup,
-  IconButton,
-  Menu,
-  MenuItem,
-  Hidden,
   Card,
-  CardActions,
   CardContent,
   CardMedia,
-  CssBaseline,
   Grid,
-  Toolbar,
   Container,
 } from "@material-ui/core";
-
-import { red, blue } from "@material-ui/core/colors";
 
 const Topics = (props) => {
   window.scrollTo(0, 0);

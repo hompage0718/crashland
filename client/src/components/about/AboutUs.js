@@ -1,5 +1,4 @@
 import React, { useState, Fragment } from "react";
-import PropTypes from "prop-types";
 import useStyles from "../../styles";
 
 import WhoWeAre from "./WhoWeAre";
@@ -8,23 +7,12 @@ import Vision from "./Vision";
 
 import {
   Typography,
-  AppBar,
   Paper,
-  Tabs,
-  Tab,
   Button,
   ButtonGroup,
-  IconButton,
-  Menu,
-  MenuItem,
-  Hidden,
   Card,
-  CardActions,
   CardContent,
-  CardMedia,
-  CssBaseline,
   Grid,
-  Toolbar,
   Container,
 } from "@material-ui/core";
 
@@ -67,7 +55,7 @@ const AboutUs = (props) => {
                     setMission(false);
                     setVision(false);
                   }}
-                  className={classes.btnpadone}
+                  className={classes.btnAboutUs}
                 >
                   WHO WE ARE
                 </Button>
@@ -77,7 +65,7 @@ const AboutUs = (props) => {
                     setMission(true);
                     setVision(false);
                   }}
-                  className={classes.btnpadone}
+                  className={classes.btnAboutUs}
                 >
                   OUR MISSION
                 </Button>
@@ -87,7 +75,7 @@ const AboutUs = (props) => {
                     setMission(false);
                     setVision(true);
                   }}
-                  className={classes.btnpadone}
+                  className={classes.btnAboutUs}
                 >
                   OUR VISION
                 </Button>

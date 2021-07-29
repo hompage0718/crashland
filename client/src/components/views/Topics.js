@@ -1,28 +1,12 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 import {
   Typography,
-  AppBar,
   Paper,
-  Tabs,
-  Tab,
-  Button,
   IconButton,
-  Menu,
-  MenuItem,
-  Hidden,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  CssBaseline,
-  Grid,
-  Toolbar,
   Container,
   ImageList,
-  ListSubheader,
   ImageListItem,
   ImageListItemBar,
 } from "@material-ui/core";
@@ -30,12 +14,10 @@ import {
 import useStyles from "../../styles";
 
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
-import { red, blue } from "@material-ui/core/colors";
+import { blue } from "@material-ui/core/colors";
 
 const Topics = (props) => {
   const classes = useStyles();
-
-  const cards = [1, 2, 3];
 
   const itemData = [
     {

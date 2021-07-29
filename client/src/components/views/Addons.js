@@ -1,28 +1,8 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 
-import {
-  Typography,
-  AppBar,
-  Paper,
-  Tabs,
-  Tab,
-  Button,
-  IconButton,
-  Menu,
-  MenuItem,
-  Hidden,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  CssBaseline,
-  Grid,
-  Toolbar,
-  Container,
-} from "@material-ui/core";
+import { Typography, Button, Grid, Container } from "@material-ui/core";
 
-import { red, blue } from "@material-ui/core/colors";
+import { blue } from "@material-ui/core/colors";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";

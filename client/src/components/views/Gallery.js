@@ -1,32 +1,11 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 import {
   Typography,
-  AppBar,
-  Paper,
-  Tabs,
-  Tab,
-  Button,
-  IconButton,
-  Menu,
-  MenuItem,
-  Hidden,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  CssBaseline,
-  Grid,
-  Toolbar,
+  ImageList,
+  ImageListItem,
   Container,
 } from "@material-ui/core";
-
-import ImageList from "@material-ui/core/ImageList";
-import ImageListItem from "@material-ui/core/ImageListItem";
-import ImageListItemBar from "@material-ui/core/ImageListItemBar";
-import StarBorderIcon from "@material-ui/icons/StarBorder";
-// import itemData from "./itemData";
 
 import useStyles from "../../styles";
 

@@ -1,28 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
 import useStyles from "../../styles";
 
-import {
-  Typography,
-  AppBar,
-  Paper,
-  Tabs,
-  Tab,
-  Button,
-  ButtonGroup,
-  IconButton,
-  Menu,
-  MenuItem,
-  Hidden,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  CssBaseline,
-  Grid,
-  Toolbar,
-  Container,
-} from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 
 const Mission = (props) => {
   const classes = useStyles();

@@ -1,14 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-  btnpadone: {
-    [theme.breakpoints.down("sm")]: {
-      padding: "5px 5px",
-    },
-    [theme.breakpoints.up("md")]: {
-      padding: "5px 50px",
-    },
-  },
   root: {
     flexGrow: 1,
     padding: theme.spacing(3, 0, 2),
@@ -18,18 +10,8 @@ const useStyles = makeStyles((theme) => ({
     overflow: "hidden",
     backgroundColor: theme.palette.background.paper,
   },
-  containerCarousel: {
-    // backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(1, 2, 1),
-    flexGrow: 1,
-  },
   container: {
     // backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(4, 0, 3),
-    flexGrow: 1,
-  },
-  containerabout: {
-    backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(4, 0, 3),
     flexGrow: 1,
   },
@@ -42,18 +24,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(4, 0, 3),
     flexGrow: 1,
-  },
-  carousel: {
-    width: "auto",
-    height: "450px",
-    // borderRadius: "5%",
-  },
-  carouselText: {
-    position: "absolute",
-    color: "#fff",
-    left: "10%",
-    // textShadow: "0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white",
-    zIndex: 1,
   },
   cardMedia: {
     flexGrow: 1,
@@ -84,31 +54,144 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "56.25%", // 16:9,
     borderRadius: "75%",
   },
+  pagetopbutton: {
+    // flexGrow: 1,
+    // padding: theme.spacing(1),
+    textAlign: "center",
+  },
+  contentcenter: {
+    // flexGrow: 1,
+    // padding: theme.spacing(1),
+    textAlign: "center",
+  },
+
+  //Carousel
+  containerCarousel: {
+    // backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(1, 2, 1),
+    flexGrow: 1,
+  },
+  carousel: {
+    width: "auto",
+    [theme.breakpoints.down("sm")]: {
+      height: "350px",
+    },
+    [theme.breakpoints.up("md")]: {
+      height: "550px",
+    },
+  },
+  carouselTextone: {
+    position: "absolute",
+    top: "150px",
+    color: "#fff",
+    left: "10%",
+    // textShadow: "0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white",
+    zIndex: 1,
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "2rem",
+    },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "4rem",
+    },
+  },
+  carouselTexttwo: {
+    position: "absolute",
+    top: "250px",
+    color: "#fff",
+    left: "10%",
+    // textShadow: "0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white",
+    zIndex: 1,
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1rem",
+    },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "2rem",
+    },
+  },
+
+  //About Us
+  containerAbout: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(4, 0, 3),
+    flexGrow: 1,
+  },
+  aboutusText: {
+    margin: "5% 10%",
+  },
+  btnAboutUs: {
+    [theme.breakpoints.down("sm")]: {
+      padding: "5px 5px",
+    },
+    [theme.breakpoints.up("md")]: {
+      padding: "5px 50px",
+    },
+  },
   aboutText: {
     textAlign: "center",
     padding: "10px 10px",
   },
-  imageList: {
-    flexWrap: "nowrap",
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
-    transform: "translateZ(0)",
+  largeIcon: {
+    width: 60,
+    height: 60,
   },
-  title: {
-    color: theme.palette.primary.light,
+
+  //Services
+  containerServices: {
+    backgroundColor: theme.palette.background.white,
+    padding: theme.spacing(4, 0, 3),
+    flexGrow: 1,
   },
-  titleBar: {
-    background:
-      "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)",
-  },
-  clientGrid: {
+  serviceGrid: {
     flexGrow: 1,
     textAlign: "center",
     padding: "20px 10px",
   },
-  clientIcon: {
+  serviceIcon: {
     width: 60,
     height: 60,
   },
+
+  //Contact Main page
+  containerContactMain: {
+    backgroundColor: theme.palette.background.white,
+    padding: theme.spacing(4, 0, 3),
+    flexGrow: 1,
+  },
+  contactGrid: {
+    textAlign: "center",
+    padding: "10px 10px",
+  },
+  contactButton: {
+    borderRadius: "10%",
+    color: "white",
+    margin: "5px",
+  },
+  contactDivider: {
+    background: "lightBlue",
+    height: "5px",
+  },
+
+  //Gallery
+  galleryRoot: {
+    paddingTop: "20px",
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+    overflow: "hidden",
+    backgroundColor: theme.palette.background.paper,
+  },
+  galleryImageList: {
+    width: "auto",
+    height: 450,
+  },
+
+  //Contact Us
+  form: {
+    width: "100%", // Fix IE 11 issue.
+    marginTop: theme.spacing(1),
+  },
+
+  //Topics
   topicRoot: {
     flexGrow: 1,
     display: "flex",
@@ -126,6 +209,20 @@ const useStyles = makeStyles((theme) => ({
   topicIcon: {
     color: "rgba(255, 255, 255, 0.54)",
   },
+  imageList: {
+    flexWrap: "nowrap",
+    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
+    transform: "translateZ(0)",
+  },
+  title: {
+    color: theme.palette.primary.light,
+  },
+  titleBar: {
+    background:
+      "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)",
+  },
+
+  //Testi
   testiroot: {
     paddingTop: "20px",
     width: "100%",
@@ -142,35 +239,24 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(7),
     height: theme.spacing(7),
   },
-  galleryRoot: {
-    paddingTop: "20px",
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    overflow: "hidden",
-    backgroundColor: theme.palette.background.paper,
-  },
-  galleryImageList: {
-    width: "auto",
-    height: 450,
-  },
+
   contactbutton: {
     borderRadius: 35,
     backgroundColor: "#d50000",
     padding: "10px 20px",
   },
-  largeIcon: {
-    width: 60,
-    height: 60,
+
+  //AddOn Explore
+  addonIcon: {
+    flexGrow: 1,
+    textAlign: "center",
   },
   largerIcon: {
     width: 80,
     height: 80,
   },
-  addonIcon: {
-    flexGrow: 1,
-    textAlign: "center",
-  },
+
+  //Footer
   footerinfo: {
     padding: theme.spacing(2),
     [theme.breakpoints.down("sm")]: {
@@ -193,16 +279,6 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: "center",
     // color: theme.palette.text.secondary,
-  },
-  pagetopbutton: {
-    // flexGrow: 1,
-    // padding: theme.spacing(1),
-    textAlign: "center",
-  },
-  contentcenter: {
-    // flexGrow: 1,
-    // padding: theme.spacing(1),
-    textAlign: "center",
   },
 }));
 

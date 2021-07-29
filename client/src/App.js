@@ -7,6 +7,7 @@ import Home from "./components/views/Home";
 import AboutUs from "./components/about/AboutUs";
 import Clients from "./components/clients/Clients";
 import Topics from "./components/topics/Topics";
+import ContactUs from "./components/contact/ContactUs";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route exact path="/aboutus" component={AboutUs} />
           <Route exact path="/clients" component={Clients} />
           <Route exact path="/topics" component={Topics} />
+          <Route exact path="/contactus" component={ContactUs} />
         </Switch>
         <Footer />
       </Fragment>

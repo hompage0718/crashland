@@ -1,34 +1,23 @@
 import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
-import PropTypes from "prop-types";
+import { useHistory } from "react-router-dom";
 
 import {
   Typography,
   AppBar,
-  Paper,
   Tabs,
   Tab,
-  Button,
   IconButton,
   Menu,
   MenuItem,
   Hidden,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
   CssBaseline,
   Grid,
   Toolbar,
-  Container,
 } from "@material-ui/core";
 import MenuTwoToneIcon from "@material-ui/icons/MenuTwoTone";
 
-import useStyles from "../../styles";
-
 const Navbar = () => {
   const history = useHistory();
-  const classes = useStyles();
   const [value, setValue] = useState(null);
 
   const handleChange = (event, newValue) => {
@@ -36,7 +25,7 @@ const Navbar = () => {
     history.push(newValue);
   };
 
-  const options = ["About Us", "Clients", "Jobs", "Contact Us"];
+  const options = ["About Us", "Our Services", "Jobs", "Contact Us"];
 
   const ITEM_HEIGHT = 48;
 
@@ -76,7 +65,7 @@ const Navbar = () => {
                   <Tab label="About Us" value="/aboutus" />
                   <Tab label="Services" value="/clients" />
                   <Tab label="Jobs" />
-                  <Tab label="Contact Us" />
+                  <Tab label="Contact Us" value="/contactus" />
                 </Tabs>
               </Toolbar>
             </Grid>

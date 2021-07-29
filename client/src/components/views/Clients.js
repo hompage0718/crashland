@@ -1,32 +1,16 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 import {
   Typography,
-  AppBar,
-  Paper,
-  Tabs,
-  Tab,
-  Button,
-  IconButton,
-  Menu,
-  MenuItem,
-  Hidden,
   Card,
-  CardActions,
   CardContent,
-  CardMedia,
-  CssBaseline,
   Grid,
-  Toolbar,
   Container,
-  Box,
 } from "@material-ui/core";
 
 import { lime, green, blue, teal } from "@material-ui/core/colors";
 
-import BlurOnIcon from "@material-ui/icons/BlurOn";
 import FastfoodIcon from "@material-ui/icons/Fastfood";
 import HotelIcon from "@material-ui/icons/Hotel";
 import DirectionsCarIcon from "@material-ui/icons/DirectionsCar";
@@ -39,7 +23,7 @@ const Service = (props) => {
 
   return (
     <>
-      <Container maxWidth="lg" className={classes.containerabout}>
+      <Container maxWidth="lg" className={classes.containerServices}>
         <Typography
           variant="h4"
           align="center"
@@ -48,12 +32,12 @@ const Service = (props) => {
         >
           Our Services
         </Typography>
-        <Grid container spacing={4} className={classes.clientGrid}>
+        <Grid container spacing={4} className={classes.serviceGrid}>
           <Grid item xs={12} sm={6} md={3}>
             <Card>
               <FastfoodIcon
                 style={{ color: lime[400] }}
-                className={classes.clientIcon}
+                className={classes.serviceIcon}
               />
               <CardContent>
                 <Link to="/clients">
@@ -71,7 +55,7 @@ const Service = (props) => {
             <Card>
               <HotelIcon
                 style={{ color: green[500] }}
-                className={classes.clientIcon}
+                className={classes.serviceIcon}
               />
               <CardContent>
                 <Link to="/clients">
@@ -88,7 +72,7 @@ const Service = (props) => {
             <Card>
               <DirectionsCarIcon
                 style={{ color: blue[400] }}
-                className={classes.clientIcon}
+                className={classes.serviceIcon}
               />
               <CardContent>
                 <Link to="/clients">
@@ -106,7 +90,7 @@ const Service = (props) => {
             <Card>
               <ShoppingCartIcon
                 style={{ color: teal[400] }}
-                className={classes.clientIcon}
+                className={classes.serviceIcon}
               />
               <CardContent>
                 <Link to="/clients">

@@ -1,29 +1,11 @@
-import React, { useState, Fragment } from "react";
-import PropTypes from "prop-types";
-import {
-  Typography,
-  AppBar,
-  Paper,
-  Tabs,
-  Tab,
-  Button,
-  IconButton,
-  Menu,
-  MenuItem,
-  Hidden,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  CssBaseline,
-  Grid,
-  Toolbar,
-  Container,
-} from "@material-ui/core";
+import React, { Fragment } from "react";
+
+import { Typography, Paper, CardMedia, Container } from "@material-ui/core";
 
 import Carousel from "react-material-ui-carousel";
 import About from "./About";
 import Clients from "./Clients";
+import Contact from "./Contact";
 import Addons from "./Addons";
 
 import useStyles from "../../styles";
@@ -57,20 +39,10 @@ const Body = (props) => {
   return (
     <>
       <Container maxWidth="xl" className={classes.containerCarousel}>
-        <Typography
-          variant="h2"
-          style={{ top: 150 }}
-          gutterBottom
-          className={classes.carouselText}
-        >
+        <Typography gutterBottom className={classes.carouselTextone}>
           ClientName
         </Typography>
-        <Typography
-          variant="h4"
-          style={{ top: 250 }}
-          gutterBottom
-          className={classes.carouselText}
-        >
+        <Typography gutterBottom className={classes.carouselTexttwo}>
           We pave the way for your success!
         </Typography>
         <Carousel
@@ -110,6 +82,7 @@ const Body = (props) => {
       </Container>
       <About />
       <Clients />
+      <Contact />
       <Addons />
     </>
   );

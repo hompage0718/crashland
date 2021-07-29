@@ -1,38 +1,15 @@
-import React, { useState, Fragment } from "react";
-import PropTypes from "prop-types";
+import React, { Fragment } from "react";
 import useStyles from "../../styles";
 
 import {
   Typography,
-  Icon,
-  AppBar,
   Paper,
-  Tabs,
-  Tab,
-  Button,
-  ButtonGroup,
-  IconButton,
-  Menu,
-  MenuItem,
-  Hidden,
   Card,
-  CardActions,
   CardContent,
   CardMedia,
-  CssBaseline,
   Grid,
-  Toolbar,
   Container,
 } from "@material-ui/core";
-
-import { red, blue } from "@material-ui/core/colors";
-
-import AirportShuttleIcon from "@material-ui/icons/AirportShuttle";
-import AirplanemodeActiveIcon from "@material-ui/icons/AirplanemodeActive";
-import AppleIcon from "@material-ui/icons/Apple";
-import ApartmentIcon from "@material-ui/icons/Apartment";
-import DirectionsCarIcon from "@material-ui/icons/DirectionsCar";
-import DirectionsBoatIcon from "@material-ui/icons/DirectionsBoat";
 
 const Clients = (props) => {
   window.scrollTo(0, 0);
