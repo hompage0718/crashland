@@ -32,7 +32,7 @@ const ContactUs = (props) => {
         </Container>
       </Paper>
       <body>
-        <Container maxWidth="md" className={classes.container}>
+        <Container maxWidth="md" className={classes.containerheader}>
           <Grid item md={12} className={classes.pagetopbutton}>
             <Grid item>
               <Typography
@@ -46,7 +46,7 @@ const ContactUs = (props) => {
             </Grid>
           </Grid>
         </Container>
-        <Container maxWidth="md" className={classes.container}>
+        <Container maxWidth="md" className={classes.containerheader}>
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6} md={6}>
               <form className={classes.form}>

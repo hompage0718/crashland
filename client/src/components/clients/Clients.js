@@ -40,7 +40,7 @@ const Clients = (props) => {
         </Container>
       </Paper>
       <body>
-        <Container maxWidth="md" className={classes.container}>
+        <Container maxWidth="md" className={classes.containerheader}>
           <Grid item md={12} className={classes.pagetopbutton}>
             <Grid item>
               <Typography
@@ -54,7 +54,7 @@ const Clients = (props) => {
             </Grid>
           </Grid>
         </Container>
-        <Container maxWidth="md" className={classes.container}>
+        <Container maxWidth="md" className={classes.containerheader}>
           <Grid container spacing={4}>
             {cards.map((card) => (
               <Grid item key={card} xs={12} sm={6} md={6}>

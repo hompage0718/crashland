@@ -40,7 +40,7 @@ const AboutUs = (props) => {
         </Container>
       </Paper>
       <body>
-        <Container maxWidth="md" className={classes.container}>
+        <Container maxWidth="md" className={classes.containerheader}>
           <Grid item md={12} className={classes.pagetopbutton}>
             <Grid item>
               <ButtonGroup
@@ -83,7 +83,7 @@ const AboutUs = (props) => {
             </Grid>
           </Grid>
         </Container>
-        <Container maxWidth="md" className={classes.container}>
+        <Container maxWidth="md" className={classes.containerheader}>
           <Grid item md={12} className={classes.contentcenter}>
             <Grid item>
               <Card variant="outlined">

@@ -2,29 +2,25 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    backgroundColor: theme.palette.background.paper,
     flexGrow: 1,
     padding: theme.spacing(3, 0, 2),
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-around",
     overflow: "hidden",
-    backgroundColor: theme.palette.background.paper,
   },
   container: {
-    // backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(4, 0, 3),
     flexGrow: 1,
   },
   containerheader: {
-    backgroundColor: "theme.palette.background.paper",
+    backgroundColor: "theme.palette.background.white",
     padding: theme.spacing(4, 2, 3),
     flexGrow: 1,
   },
-  containeraddon: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(4, 0, 3),
-    flexGrow: 1,
-  },
+
   cardMedia: {
     flexGrow: 1,
     // paddingTop: "42.85%", //21:9
@@ -68,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
   //Carousel
   containerCarousel: {
     // backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(1, 2, 1),
+    padding: theme.spacing(1, 2, 6),
     flexGrow: 1,
   },
   carousel: {
@@ -112,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
   //About Us
   containerAbout: {
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(4, 0, 3),
+    padding: theme.spacing(6, 0, 6),
     flexGrow: 1,
   },
   aboutusText: {
@@ -138,7 +134,7 @@ const useStyles = makeStyles((theme) => ({
   //Services
   containerServices: {
     backgroundColor: theme.palette.background.white,
-    padding: theme.spacing(4, 0, 3),
+    padding: theme.spacing(6, 0, 6),
     flexGrow: 1,
   },
   serviceGrid: {
@@ -153,22 +149,29 @@ const useStyles = makeStyles((theme) => ({
 
   //Contact Main page
   containerContactMain: {
-    backgroundColor: theme.palette.background.white,
-    padding: theme.spacing(4, 0, 3),
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(6, 0, 6),
     flexGrow: 1,
   },
   contactGrid: {
     textAlign: "center",
-    padding: "10px 10px",
+    padding: "0 5px 20px 5px",
   },
   contactButton: {
     borderRadius: "10%",
     color: "white",
-    margin: "5px",
+    // margin: "0 5px 0 5px",
   },
   contactDivider: {
-    background: "lightBlue",
+    background: "#00e5ff",
     height: "5px",
+  },
+
+  //Addon
+  containeraddon: {
+    backgroundColor: theme.palette.background.white,
+    padding: theme.spacing(6, 0, 6),
+    flexGrow: 1,
   },
 
   //Gallery
